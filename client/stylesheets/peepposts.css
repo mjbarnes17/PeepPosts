@@ -5,3 +5,13 @@ body {
 .jumbotron {
   margin-top: 51px;
 }
+
+.post {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: #ccc solid 1px;
+}
+
+.post:last-child {
+  border: none;
+}
