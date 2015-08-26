@@ -1,6 +1,7 @@
 body {
   height: 1200px;
   margin-top: 51px;
+  background-color: #ddd;
 }
 
 #upload-btn {
