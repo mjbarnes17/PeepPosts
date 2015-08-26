@@ -1,3 +1,12 @@
+// Subscription to all posts for server
+Meteor.subscribe("posts");
+
+// Subscription to all profile images for server
+Meteor.subscribe("ProfileImages");
+
+// Subscription to all user images for server
+Meteor.subscribe("UserImages");
+
 Meteor.startup(function () {
     AccountsEntry.config({
       homeRoute: '/',                    // mandatory - path to redirect to after sign-out
