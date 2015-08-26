@@ -24,52 +24,19 @@
     </div>
   </div>
   <hr>
+  {{ #each posts }}
   <div class="row post">
     <div class="col-md-2 col-sm-3 text-center">
-      <img src="//placehold.it/100" style="width:100px;height:100px" class="img-circle">
+      <img src="//placehold.it/75" class="profile-image img-circle">
     </div>
     <div class="col-md-10 col-sm-9">
-      <small>Posted by <strong>Marcus</strong> &#64; <i>8-25-2015</i> </small>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
-      Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis
-      dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
-      Aliquam in felis sit amet augue.</p>
+      <small>Posted by <strong>{{ username }}</strong> &#64; <i>{{ createdAt }}</i> </small>
+      <p>{{ body }}</p>
     </div>
   </div>
-  <div class="row post">
-    <div class="col-md-2 col-sm-3 text-center">
-      <img src="//placehold.it/100" style="width:100px;height:100px" class="img-circle">
-    </div>
-    <div class="col-md-10 col-sm-9">
-      <small>Posted by <strong>Marcus</strong> &#64; <i>8-25-2015</i> </small>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
-      Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis
-      dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
-      Aliquam in felis sit amet augue.</p>
-    </div>
-  </div>
-  <div class="row post">
-    <div class="col-md-2 col-sm-3 text-center">
-      <img src="//placehold.it/100" style="width:100px;height:100px" class="img-circle">
-    </div>
-    <div class="col-md-10 col-sm-9">
-      <small>Posted by <strong>Marcus</strong> &#64; <i>8-25-2015</i> </small>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
-      Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis
-      dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
-      Aliquam in felis sit amet augue.</p>
-    </div>
-  </div>
-  <div class="row post">
-    <div class="col-md-2 col-sm-3 text-center">
-      <img src="//placehold.it/100" style="width:100px;height:100px" class="img-circle">
-    </div>
-    <div class="col-md-10 col-sm-9">
-      <small>Posted by <strong>Marcus</strong> &#64; <i>8-25-2015</i> </small>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
-      Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis
-      dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
-      Aliquam in felis sit amet augue.</p>
-    </div>
-  </div>
+  {{ else }}
+    <p>
+      No Posts
+    </p>
+  {{ /each }}
 </template>
