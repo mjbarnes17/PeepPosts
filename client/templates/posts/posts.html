@@ -27,7 +27,7 @@
   {{ #each posts }}
   <div class="row post">
     <div class="col-md-2 col-sm-3 text-center">
-      <img src="//placehold.it/75" class="profile-image img-circle">
+      <img src="{{ getProfileImage userId }}" class="profile-image img-circle">
     </div>
     <div class="col-md-10 col-sm-9">
       <small>Posted by <strong>{{ username }}</strong> &#64; <i>{{ createdAt }}</i> </small>

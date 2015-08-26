@@ -9,3 +9,11 @@ Meteor.startup(function () {
     passwordSignupFields: 'USERNAME_AND_EMAIL'
   });
 });
+
+// Global Template function for Pofile image
+Template.registerHelper('getProfileImage', function(userId) {
+  // Sets imgUrl to the matched userId image found in DB
+  var imgUrl = UserImages.findOne({userId: userId}).image;
+  // returns the found image
+  return imgUrl;
+});
